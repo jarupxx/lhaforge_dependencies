@@ -1,0 +1,1195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="source\assert.c" />
+    <ClCompile Include="source\cxx\isfuns.cc">
+      <UndefinePreprocessorDefinitions>inline;%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="source\cxx\ismpf.cc">
+      <UndefinePreprocessorDefinitions>inline;%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="source\cxx\ismpq.cc">
+      <UndefinePreprocessorDefinitions>inline;%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="source\cxx\ismpz.cc">
+      <UndefinePreprocessorDefinitions>inline;%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="source\cxx\ismpznw.cc">
+      <UndefinePreprocessorDefinitions>inline;%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="source\cxx\limits.cc">
+      <UndefinePreprocessorDefinitions>inline;%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="source\cxx\osdoprnti.cc">
+      <UndefinePreprocessorDefinitions>inline;%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="source\cxx\osfuns.cc">
+      <UndefinePreprocessorDefinitions>inline;%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="source\cxx\osmpf.cc">
+      <UndefinePreprocessorDefinitions>inline;%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="source\cxx\osmpq.cc">
+      <UndefinePreprocessorDefinitions>inline;%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="source\cxx\osmpz.cc">
+      <UndefinePreprocessorDefinitions>inline;%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="source\errno.c" />
+    <ClCompile Include="source\extract-dbl.c" />
+    <ClCompile Include="source\invalid.c" />
+    <ClCompile Include="source\memory.c" />
+    <ClCompile Include="source\mpf\abs.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\add.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\add_ui.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\ceilfloor.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\clear.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\clears.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\cmp.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\cmp_d.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\cmp_si.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\cmp_ui.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\cmp_z.c" />
+    <ClCompile Include="source\mpf\div.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\div_2exp.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\div_ui.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\dump.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\eq.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\fits_sint.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\fits_slong.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\fits_sshort.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\fits_uint.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\fits_ulong.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\fits_ushort.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\get_d.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\get_dfl_prec.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\get_d_2exp.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\get_prc.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\get_si.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\get_str.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\get_ui.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\init.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\init2.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\inits.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\inp_str.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\int_p.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\iset.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\iset_d.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\iset_si.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\iset_str.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\iset_ui.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\mul.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\mul_2exp.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\mul_ui.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\neg.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\out_str.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\pow_ui.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\random2.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\reldiff.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\set.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\set_d.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\set_dfl_prec.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\set_prc.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\set_prc_raw.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\set_q.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\set_si.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\set_str.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\set_ui.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\set_z.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\size.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\sqrt.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\sqrt_ui.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\sub.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\sub_ui.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\swap.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\trunc.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\ui_div.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\ui_sub.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpf\urandomb.c">
+      <ObjectFileName>$(IntDir)\mpf_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpn\generic\add.c" />
+    <ClCompile Include="source\mpn\generic\add_1.c" />
+    <ClCompile Include="source\mpn\generic\add_err1_n.c" />
+    <ClCompile Include="source\mpn\generic\add_err2_n.c" />
+    <ClCompile Include="source\mpn\generic\add_err3_n.c" />
+    <ClCompile Include="source\mpn\generic\add_n_sub_n.c" />
+    <ClCompile Include="source\mpn\generic\bdiv_q.c" />
+    <ClCompile Include="source\mpn\generic\bdiv_qr.c" />
+    <ClCompile Include="source\mpn\generic\binvert.c" />
+    <ClCompile Include="source\mpn\generic\broot.c" />
+    <ClCompile Include="source\mpn\generic\brootinv.c" />
+    <ClCompile Include="source\mpn\generic\bsqrt.c" />
+    <ClCompile Include="source\mpn\generic\bsqrtinv.c" />
+    <ClCompile Include="source\mpn\generic\cmp.c">
+      <ObjectFileName>$(IntDir)\mpn_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpn\generic\cnd_swap.c" />
+    <ClCompile Include="source\mpn\generic\com.c">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="source\mpn\generic\comb_tables.c" />
+    <ClCompile Include="source\mpn\generic\compute_powtab.c" />
+    <ClCompile Include="source\mpn\generic\dcpi1_bdiv_q.c" />
+    <ClCompile Include="source\mpn\generic\dcpi1_bdiv_qr.c" />
+    <ClCompile Include="source\mpn\generic\dcpi1_divappr_q.c" />
+    <ClCompile Include="source\mpn\generic\dcpi1_div_q.c" />
+    <ClCompile Include="source\mpn\generic\dcpi1_div_qr.c" />
+    <ClCompile Include="source\mpn\generic\diveby3.c" />
+    <ClCompile Include="source\mpn\generic\divexact.c" />
+    <ClCompile Include="source\mpn\generic\divis.c" />
+    <ClCompile Include="source\mpn\generic\divrem.c" />
+    <ClCompile Include="source\mpn\generic\div_q.c" />
+    <ClCompile Include="source\mpn\generic\div_qr_1.c" />
+    <ClCompile Include="source\mpn\generic\div_qr_1n_pi1.c">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="source\mpn\generic\div_qr_1n_pi2.c" />
+    <ClCompile Include="source\mpn\generic\div_qr_1u_pi2.c" />
+    <ClCompile Include="source\mpn\generic\div_qr_2.c" />
+    <ClCompile Include="source\mpn\generic\div_qr_2n_pi1.c">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="source\mpn\generic\div_qr_2u_pi1.c" />
+    <ClCompile Include="source\mpn\generic\dump.c">
+      <ObjectFileName>$(IntDir)\mpn_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpn\generic\fib2m.c" />
+    <ClCompile Include="source\mpn\generic\fib2_ui.c" />
+    <ClCompile Include="source\mpn\generic\gcd.c" />
+    <ClCompile Include="source\mpn\generic\gcdext.c" />
+    <ClCompile Include="source\mpn\generic\gcdext_1.c" />
+    <ClCompile Include="source\mpn\generic\gcdext_lehmer.c" />
+    <ClCompile Include="source\mpn\generic\gcd_1.c" />
+    <ClCompile Include="source\mpn\generic\gcd_22.c" />
+    <ClCompile Include="source\mpn\generic\gcd_subdiv_step.c" />
+    <ClCompile Include="source\mpn\generic\get_d.c">
+      <ObjectFileName>$(IntDir)\mpn_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpn\generic\get_str.c">
+      <ObjectFileName>$(IntDir)\mpn_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpn\generic\hgcd.c" />
+    <ClCompile Include="source\mpn\generic\hgcd2.c" />
+    <ClCompile Include="source\mpn\generic\hgcd2_jacobi.c" />
+    <ClCompile Include="source\mpn\generic\hgcd_appr.c" />
+    <ClCompile Include="source\mpn\generic\hgcd_jacobi.c" />
+    <ClCompile Include="source\mpn\generic\hgcd_matrix.c" />
+    <ClCompile Include="source\mpn\generic\hgcd_reduce.c" />
+    <ClCompile Include="source\mpn\generic\hgcd_step.c" />
+    <ClCompile Include="source\mpn\generic\invert.c" />
+    <ClCompile Include="source\mpn\generic\invertappr.c" />
+    <ClCompile Include="source\mpn\generic\jacbase.c" />
+    <ClCompile Include="source\mpn\generic\jacobi.c" />
+    <ClCompile Include="source\mpn\generic\jacobi_2.c" />
+    <ClCompile Include="source\mpn\generic\lshiftc.c">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="source\mpn\generic\matrix22_mul.c" />
+    <ClCompile Include="source\mpn\generic\matrix22_mul1_inverse_vector.c" />
+    <ClCompile Include="source\mpn\generic\mode1o.c">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="source\mpn\generic\mod_1.c" />
+    <ClCompile Include="source\mpn\generic\mod_1_1.c">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="source\mpn\generic\mod_1_2.c">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="source\mpn\generic\mod_1_3.c" />
+    <ClCompile Include="source\mpn\generic\mod_1_4.c">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="source\mpn\generic\mul.c">
+      <ObjectFileName>$(IntDir)\mpn_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpn\generic\mullo_basecase.c">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="source\mpn\generic\mullo_n.c" />
+    <ClCompile Include="source\mpn\generic\mulmid.c" />
+    <ClCompile Include="source\mpn\generic\mulmid_basecase.c" />
+    <ClCompile Include="source\mpn\generic\mulmid_n.c" />
+    <ClCompile Include="source\mpn\generic\mulmod_bnm1.c" />
+    <ClCompile Include="source\mpn\generic\mul_basecase.c">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="source\mpn\generic\mul_fft.c" />
+    <ClCompile Include="source\mpn\generic\mul_n.c" />
+    <ClCompile Include="source\mpn\generic\mu_bdiv_q.c" />
+    <ClCompile Include="source\mpn\generic\mu_bdiv_qr.c" />
+    <ClCompile Include="source\mpn\generic\mu_divappr_q.c" />
+    <ClCompile Include="source\mpn\generic\mu_div_q.c" />
+    <ClCompile Include="source\mpn\generic\mu_div_qr.c" />
+    <ClCompile Include="source\mpn\generic\neg.c">
+      <ObjectFileName>$(IntDir)\mpn_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpn\generic\nussbaumer_mul.c" />
+    <ClCompile Include="source\mpn\generic\perfpow.c" />
+    <ClCompile Include="source\mpn\generic\perfsqr.c" />
+    <ClCompile Include="source\mpn\generic\powlo.c" />
+    <ClCompile Include="source\mpn\generic\powm.c" />
+    <ClCompile Include="source\mpn\generic\pow_1.c" />
+    <ClCompile Include="source\mpn\generic\pre_divrem_1.c">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="source\mpn\generic\pre_mod_1.c" />
+    <ClCompile Include="source\mpn\generic\random.c" />
+    <ClCompile Include="source\mpn\generic\random2.c" />
+    <ClCompile Include="source\mpn\generic\redc_1.c">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="source\mpn\generic\redc_2.c" />
+    <ClCompile Include="source\mpn\generic\redc_n.c" />
+    <ClCompile Include="source\mpn\generic\remove.c" />
+    <ClCompile Include="source\mpn\generic\rootrem.c" />
+    <ClCompile Include="source\mpn\generic\sbpi1_bdiv_q.c" />
+    <ClCompile Include="source\mpn\generic\sbpi1_bdiv_qr.c" />
+    <ClCompile Include="source\mpn\generic\sbpi1_bdiv_r.c" />
+    <ClCompile Include="source\mpn\generic\sbpi1_divappr_q.c" />
+    <ClCompile Include="source\mpn\generic\sbpi1_div_q.c" />
+    <ClCompile Include="source\mpn\generic\sbpi1_div_qr.c" />
+    <ClCompile Include="source\mpn\generic\scan0.c" />
+    <ClCompile Include="source\mpn\generic\scan1.c" />
+    <ClCompile Include="source\mpn\generic\sec_invert.c" />
+    <ClCompile Include="source\mpn\generic\sec_mul.c" />
+    <ClCompile Include="source\mpn\generic\sec_powm.c" />
+    <ClCompile Include="source\mpn\generic\sec_sqr.c" />
+    <ClCompile Include="source\mpn\generic\set_str.c">
+      <ObjectFileName>$(IntDir)\mpn_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpn\generic\sizeinbase.c" />
+    <ClCompile Include="source\mpn\generic\sqr.c" />
+    <ClCompile Include="source\mpn\generic\sqrlo.c" />
+    <ClCompile Include="source\mpn\generic\sqrlo_basecase.c" />
+    <ClCompile Include="source\mpn\generic\sqrmod_bnm1.c" />
+    <ClCompile Include="source\mpn\generic\sqrtrem.c" />
+    <ClCompile Include="source\mpn\generic\strongfibo.c" />
+    <ClCompile Include="source\mpn\generic\sub.c">
+      <ObjectFileName>$(IntDir)\mpn_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpn\generic\sub_1.c" />
+    <ClCompile Include="source\mpn\generic\sub_err1_n.c" />
+    <ClCompile Include="source\mpn\generic\sub_err2_n.c" />
+    <ClCompile Include="source\mpn\generic\sub_err3_n.c" />
+    <ClCompile Include="source\mpn\generic\tdiv_qr.c" />
+    <ClCompile Include="source\mpn\generic\toom22_mul.c" />
+    <ClCompile Include="source\mpn\generic\toom2_sqr.c" />
+    <ClCompile Include="source\mpn\generic\toom32_mul.c" />
+    <ClCompile Include="source\mpn\generic\toom33_mul.c" />
+    <ClCompile Include="source\mpn\generic\toom3_sqr.c" />
+    <ClCompile Include="source\mpn\generic\toom42_mul.c" />
+    <ClCompile Include="source\mpn\generic\toom42_mulmid.c" />
+    <ClCompile Include="source\mpn\generic\toom43_mul.c" />
+    <ClCompile Include="source\mpn\generic\toom44_mul.c" />
+    <ClCompile Include="source\mpn\generic\toom4_sqr.c" />
+    <ClCompile Include="source\mpn\generic\toom52_mul.c" />
+    <ClCompile Include="source\mpn\generic\toom53_mul.c" />
+    <ClCompile Include="source\mpn\generic\toom54_mul.c" />
+    <ClCompile Include="source\mpn\generic\toom62_mul.c" />
+    <ClCompile Include="source\mpn\generic\toom63_mul.c" />
+    <ClCompile Include="source\mpn\generic\toom6h_mul.c" />
+    <ClCompile Include="source\mpn\generic\toom6_sqr.c" />
+    <ClCompile Include="source\mpn\generic\toom8h_mul.c" />
+    <ClCompile Include="source\mpn\generic\toom8_sqr.c" />
+    <ClCompile Include="source\mpn\generic\toom_couple_handling.c" />
+    <ClCompile Include="source\mpn\generic\toom_eval_dgr3_pm1.c" />
+    <ClCompile Include="source\mpn\generic\toom_eval_dgr3_pm2.c" />
+    <ClCompile Include="source\mpn\generic\toom_eval_pm1.c" />
+    <ClCompile Include="source\mpn\generic\toom_eval_pm2.c" />
+    <ClCompile Include="source\mpn\generic\toom_eval_pm2exp.c" />
+    <ClCompile Include="source\mpn\generic\toom_eval_pm2rexp.c" />
+    <ClCompile Include="source\mpn\generic\toom_interpolate_12pts.c" />
+    <ClCompile Include="source\mpn\generic\toom_interpolate_16pts.c" />
+    <ClCompile Include="source\mpn\generic\toom_interpolate_5pts.c" />
+    <ClCompile Include="source\mpn\generic\toom_interpolate_6pts.c" />
+    <ClCompile Include="source\mpn\generic\toom_interpolate_7pts.c" />
+    <ClCompile Include="source\mpn\generic\toom_interpolate_8pts.c" />
+    <ClCompile Include="source\mpn\generic\trialdiv.c" />
+    <ClCompile Include="source\mpn\generic\zero.c" />
+    <ClCompile Include="source\mpn\generic\zero_p.c" />
+    <ClCompile Include="source\mpq\abs.c">
+      <ObjectFileName>$(IntDir)\mpq_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpq\aors.c" />
+    <ClCompile Include="source\mpq\canonicalize.c" />
+    <ClCompile Include="source\mpq\clear.c">
+      <ObjectFileName>$(IntDir)\mpq_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpq\clears.c">
+      <ObjectFileName>$(IntDir)\mpq_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpq\cmp.c">
+      <ObjectFileName>$(IntDir)\mpq_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpq\cmp_si.c">
+      <ObjectFileName>$(IntDir)\mpq_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpq\cmp_ui.c">
+      <ObjectFileName>$(IntDir)\mpq_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpq\div.c">
+      <ObjectFileName>$(IntDir)\mpq_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpq\equal.c" />
+    <ClCompile Include="source\mpq\get_d.c">
+      <ObjectFileName>$(IntDir)\mpq_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpq\get_den.c" />
+    <ClCompile Include="source\mpq\get_num.c" />
+    <ClCompile Include="source\mpq\get_str.c">
+      <ObjectFileName>$(IntDir)\mpq_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpq\init.c">
+      <ObjectFileName>$(IntDir)\mpq_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpq\inits.c">
+      <ObjectFileName>$(IntDir)\mpq_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpq\inp_str.c">
+      <ObjectFileName>$(IntDir)\mpq_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpq\inv.c" />
+    <ClCompile Include="source\mpq\md_2exp.c" />
+    <ClCompile Include="source\mpq\mul.c">
+      <ObjectFileName>$(IntDir)\mpq_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpq\neg.c">
+      <ObjectFileName>$(IntDir)\mpq_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpq\out_str.c">
+      <ObjectFileName>$(IntDir)\mpq_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpq\set.c">
+      <ObjectFileName>$(IntDir)\mpq_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpq\set_d.c">
+      <ObjectFileName>$(IntDir)\mpq_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpq\set_den.c" />
+    <ClCompile Include="source\mpq\set_f.c" />
+    <ClCompile Include="source\mpq\set_num.c" />
+    <ClCompile Include="source\mpq\set_si.c">
+      <ObjectFileName>$(IntDir)\mpq_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpq\set_str.c">
+      <ObjectFileName>$(IntDir)\mpq_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpq\set_ui.c">
+      <ObjectFileName>$(IntDir)\mpq_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpq\set_z.c">
+      <ObjectFileName>$(IntDir)\mpq_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpq\swap.c">
+      <ObjectFileName>$(IntDir)\mpq_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\2fac_ui.c" />
+    <ClCompile Include="source\mpz\abs.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\add.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\add_ui.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\and.c" />
+    <ClCompile Include="source\mpz\aorsmul.c" />
+    <ClCompile Include="source\mpz\aorsmul_i.c" />
+    <ClCompile Include="source\mpz\array_init.c" />
+    <ClCompile Include="source\mpz\bin_ui.c" />
+    <ClCompile Include="source\mpz\bin_uiui.c" />
+    <ClCompile Include="source\mpz\cdiv_q.c" />
+    <ClCompile Include="source\mpz\cdiv_qr.c" />
+    <ClCompile Include="source\mpz\cdiv_qr_ui.c" />
+    <ClCompile Include="source\mpz\cdiv_q_ui.c" />
+    <ClCompile Include="source\mpz\cdiv_r.c" />
+    <ClCompile Include="source\mpz\cdiv_r_ui.c" />
+    <ClCompile Include="source\mpz\cdiv_ui.c" />
+    <ClCompile Include="source\mpz\cfdiv_q_2exp.c" />
+    <ClCompile Include="source\mpz\cfdiv_r_2exp.c" />
+    <ClCompile Include="source\mpz\clear.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\clears.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\clrbit.c" />
+    <ClCompile Include="source\mpz\cmp.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\cmpabs.c" />
+    <ClCompile Include="source\mpz\cmpabs_d.c" />
+    <ClCompile Include="source\mpz\cmpabs_ui.c" />
+    <ClCompile Include="source\mpz\cmp_d.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\cmp_si.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\cmp_ui.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\com.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\combit.c" />
+    <ClCompile Include="source\mpz\cong.c" />
+    <ClCompile Include="source\mpz\cong_2exp.c" />
+    <ClCompile Include="source\mpz\cong_ui.c" />
+    <ClCompile Include="source\mpz\divegcd.c" />
+    <ClCompile Include="source\mpz\divexact.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\dive_ui.c" />
+    <ClCompile Include="source\mpz\divis.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\divis_2exp.c" />
+    <ClCompile Include="source\mpz\divis_ui.c" />
+    <ClCompile Include="source\mpz\dump.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\export.c" />
+    <ClCompile Include="source\mpz\fac_ui.c" />
+    <ClCompile Include="source\mpz\fdiv_q.c" />
+    <ClCompile Include="source\mpz\fdiv_qr.c" />
+    <ClCompile Include="source\mpz\fdiv_qr_ui.c" />
+    <ClCompile Include="source\mpz\fdiv_q_ui.c" />
+    <ClCompile Include="source\mpz\fdiv_r.c" />
+    <ClCompile Include="source\mpz\fdiv_r_ui.c" />
+    <ClCompile Include="source\mpz\fdiv_ui.c" />
+    <ClCompile Include="source\mpz\fib2_ui.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\fib_ui.c" />
+    <ClCompile Include="source\mpz\fits_sint.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\fits_slong.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\fits_sshort.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\fits_uint.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\fits_ulong.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\fits_ushort.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\gcd.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\gcdext.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\gcd_ui.c" />
+    <ClCompile Include="source\mpz\getlimbn.c" />
+    <ClCompile Include="source\mpz\get_d.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\get_d_2exp.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\get_si.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\get_str.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\get_ui.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\hamdist.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\import.c" />
+    <ClCompile Include="source\mpz\init.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\init2.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\inits.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\inp_raw.c" />
+    <ClCompile Include="source\mpz\inp_str.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\invert.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\ior.c" />
+    <ClCompile Include="source\mpz\iset.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\iset_d.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\iset_si.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\iset_str.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\iset_ui.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\jacobi.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\kronsz.c" />
+    <ClCompile Include="source\mpz\kronuz.c" />
+    <ClCompile Include="source\mpz\kronzs.c" />
+    <ClCompile Include="source\mpz\kronzu.c" />
+    <ClCompile Include="source\mpz\lcm.c" />
+    <ClCompile Include="source\mpz\lcm_ui.c" />
+    <ClCompile Include="source\mpz\limbs_finish.c" />
+    <ClCompile Include="source\mpz\limbs_modify.c" />
+    <ClCompile Include="source\mpz\limbs_read.c" />
+    <ClCompile Include="source\mpz\limbs_write.c" />
+    <ClCompile Include="source\mpz\lucmod.c" />
+    <ClCompile Include="source\mpz\lucnum2_ui.c" />
+    <ClCompile Include="source\mpz\lucnum_ui.c" />
+    <ClCompile Include="source\mpz\mfac_uiui.c" />
+    <ClCompile Include="source\mpz\millerrabin.c" />
+    <ClCompile Include="source\mpz\mod.c" />
+    <ClCompile Include="source\mpz\mul.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\mul_2exp.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\mul_si.c" />
+    <ClCompile Include="source\mpz\mul_ui.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\neg.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\nextprime.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\n_pow_ui.c" />
+    <ClCompile Include="source\mpz\oddfac_1.c" />
+    <ClCompile Include="source\mpz\out_raw.c" />
+    <ClCompile Include="source\mpz\out_str.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\perfpow.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\perfsqr.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\popcount.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\powm.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\powm_sec.c" />
+    <ClCompile Include="source\mpz\powm_ui.c" />
+    <ClCompile Include="source\mpz\pow_ui.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\pprime_p.c" />
+    <ClCompile Include="source\mpz\primorial_ui.c" />
+    <ClCompile Include="source\mpz\prodlimbs.c" />
+    <ClCompile Include="source\mpz\random.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\random2.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\realloc.c" />
+    <ClCompile Include="source\mpz\realloc2.c" />
+    <ClCompile Include="source\mpz\remove.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\roinit_n.c" />
+    <ClCompile Include="source\mpz\root.c" />
+    <ClCompile Include="source\mpz\rootrem.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\rrandomb.c" />
+    <ClCompile Include="source\mpz\scan0.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\scan1.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\set.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\setbit.c" />
+    <ClCompile Include="source\mpz\set_d.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\set_f.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\set_q.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\set_si.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\set_str.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\set_ui.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\size.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\sizeinbase.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\sqrt.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\sqrtrem.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\stronglucas.c" />
+    <ClCompile Include="source\mpz\sub.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\sub_ui.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\swap.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\tdiv_q.c" />
+    <ClCompile Include="source\mpz\tdiv_qr.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\tdiv_qr_ui.c" />
+    <ClCompile Include="source\mpz\tdiv_q_2exp.c" />
+    <ClCompile Include="source\mpz\tdiv_q_ui.c" />
+    <ClCompile Include="source\mpz\tdiv_r.c" />
+    <ClCompile Include="source\mpz\tdiv_r_2exp.c" />
+    <ClCompile Include="source\mpz\tdiv_r_ui.c" />
+    <ClCompile Include="source\mpz\tdiv_ui.c" />
+    <ClCompile Include="source\mpz\tstbit.c" />
+    <ClCompile Include="source\mpz\ui_pow_ui.c" />
+    <ClCompile Include="source\mpz\ui_sub.c">
+      <ObjectFileName>$(IntDir)\mpz_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="source\mpz\urandomb.c" />
+    <ClCompile Include="source\mpz\urandomm.c" />
+    <ClCompile Include="source\mpz\xor.c" />
+    <ClCompile Include="source\mp_bpl.c" />
+    <ClCompile Include="source\mp_clz_tab.c" />
+    <ClCompile Include="source\mp_dv_tab.c" />
+    <ClCompile Include="source\mp_get_fns.c" />
+    <ClCompile Include="source\mp_minv_tab.c" />
+    <ClCompile Include="source\mp_set_fns.c" />
+    <ClCompile Include="source\nextprime.c" />
+    <ClCompile Include="source\primesieve.c" />
+    <ClCompile Include="source\printf\asprintf.c" />
+    <ClCompile Include="source\printf\asprntffuns.c" />
+    <ClCompile Include="source\printf\doprnt.c" />
+    <ClCompile Include="source\printf\doprntf.c" />
+    <ClCompile Include="source\printf\doprnti.c" />
+    <ClCompile Include="source\printf\fprintf.c" />
+    <ClCompile Include="source\printf\obprintf.c" />
+    <ClCompile Include="source\printf\obprntffuns.c" />
+    <ClCompile Include="source\printf\obvprintf.c" />
+    <ClCompile Include="source\printf\printf.c" />
+    <ClCompile Include="source\printf\printffuns.c" />
+    <ClCompile Include="source\printf\repl-vsnprintf.c" />
+    <ClCompile Include="source\printf\snprintf.c" />
+    <ClCompile Include="source\printf\snprntffuns.c" />
+    <ClCompile Include="source\printf\sprintf.c" />
+    <ClCompile Include="source\printf\sprintffuns.c" />
+    <ClCompile Include="source\printf\vasprintf.c" />
+    <ClCompile Include="source\printf\vfprintf.c" />
+    <ClCompile Include="source\printf\vprintf.c" />
+    <ClCompile Include="source\printf\vsnprintf.c" />
+    <ClCompile Include="source\printf\vsprintf.c" />
+    <ClCompile Include="source\rand\rand.c" />
+    <ClCompile Include="source\rand\randbui.c" />
+    <ClCompile Include="source\rand\randclr.c" />
+    <ClCompile Include="source\rand\randdef.c" />
+    <ClCompile Include="source\rand\randiset.c" />
+    <ClCompile Include="source\rand\randlc2s.c" />
+    <ClCompile Include="source\rand\randlc2x.c" />
+    <ClCompile Include="source\rand\randmt.c" />
+    <ClCompile Include="source\rand\randmts.c" />
+    <ClCompile Include="source\rand\randmui.c" />
+    <ClCompile Include="source\rand\rands.c" />
+    <ClCompile Include="source\rand\randsd.c" />
+    <ClCompile Include="source\rand\randsdui.c" />
+    <ClCompile Include="source\scanf\doscan.c" />
+    <ClCompile Include="source\scanf\fscanf.c" />
+    <ClCompile Include="source\scanf\fscanffuns.c" />
+    <ClCompile Include="source\scanf\scanf.c" />
+    <ClCompile Include="source\scanf\sscanf.c" />
+    <ClCompile Include="source\scanf\sscanffuns.c" />
+    <ClCompile Include="source\scanf\vfscanf.c" />
+    <ClCompile Include="source\scanf\vscanf.c" />
+    <ClCompile Include="source\scanf\vsscanf.c" />
+    <ClCompile Include="source\tal-reent.c" />
+    <ClCompile Include="source\version.c" />
+    <ClCompile Include="source\SMP\mpn\sec_add_1.c" />
+    <ClCompile Include="source\SMP\mpn\sec_div_qr.c" />
+    <ClCompile Include="source\SMP\mpn\sec_div_r.c" />
+    <ClCompile Include="source\SMP\mpn\sec_pi1_div_qr.c" />
+    <ClCompile Include="source\SMP\mpn\sec_pi1_div_r.c" />
+    <ClCompile Include="source\SMP\mpn\sec_sub_1.c" />
+    <ClCompile Include="source\SMP\mpn\x86\andn_n.c">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="source\SMP\mpn\x86\and_n.c">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="source\SMP\mpn\x86\hamdist.c">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="source\SMP\mpn\x86\iorn_n.c">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="source\SMP\mpn\x86\ior_n.c">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="source\SMP\mpn\x86\nand_n.c">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="source\SMP\mpn\x86\nior_n.c">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="source\SMP\mpn\x86\popcount.c">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="source\SMP\mpn\x86\xnor_n.c">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="source\SMP\mpn\x86\xor_n.c">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="source\SMP\x86\mpn\fib_table.c">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="source\SMP\x86\mpn\mp_bases.c">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="source\SMP\x86_64\mpn\fib_table.c">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="source\SMP\x86_64\mpn\mp_bases.c">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\asl.h" />
+    <ClInclude Include="source\gmp-impl.h" />
+    <ClInclude Include="source\gmpxx.h" />
+    <ClInclude Include="source\longlong.h" />
+    <ClInclude Include="source\mpf\fits_s.h" />
+    <ClInclude Include="source\mpf\fits_u.h" />
+    <ClInclude Include="source\mpz\aors.h" />
+    <ClInclude Include="source\mpz\aors_ui.h" />
+    <ClInclude Include="source\mpz\fits_s.h" />
+    <ClInclude Include="source\mpz\mul_i.h" />
+    <ClInclude Include="source\rand\randmt.h" />
+    <ClInclude Include="source\SMP\config.h" />
+    <ClInclude Include="source\SMP\gmp.h" />
+    <ClInclude Include="source\SMP\version.h" />
+    <ClInclude Include="source\SMP\x86\fac_table.h" />
+    <ClInclude Include="source\SMP\x86\fib_table.h" />
+    <ClInclude Include="source\SMP\x86\gmp-mparam.h" />
+    <ClInclude Include="source\SMP\x86\mpn\perfsqr.h" />
+    <ClInclude Include="source\SMP\x86\mp_bases.h" />
+    <ClInclude Include="source\SMP\x86\trialdivtab.h" />
+    <ClInclude Include="source\SMP\x86_64\fac_table.h" />
+    <ClInclude Include="source\SMP\x86_64\fib_table.h" />
+    <ClInclude Include="source\SMP\x86_64\gmp-mparam.h" />
+    <ClInclude Include="source\SMP\x86_64\mpn\perfsqr.h" />
+    <ClInclude Include="source\SMP\x86_64\mp_bases.h" />
+    <ClInclude Include="source\SMP\x86_64\trialdivtab.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\addlsh1_n.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\addlsh2_n.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\addlsh_n.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\addmul_2.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\add_n.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\bdiv_q_1.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\cnd_add_n.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\cnd_sub_n.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\com.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\copyd.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\copyi.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\divexact_1.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\gcd_11.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\hamdist.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\invert_limb.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\lshsub_n.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\modexact_1_odd.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\mod_1s_2p.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\mod_1s_4p.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\mod_1_1p.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\mod_34lsub1.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\mullo_basecase.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\mul_2.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\mul_basecase.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\popcount.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\rsblsh1_n.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\rsblsh2_n.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\rsblsh_n.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\sqr_basecase.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\sqr_diag_addlsh1.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\sublsh1_n.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\sub_n.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\invert_limb_table.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\mul_1.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\rsh1sub_n.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\submul_1.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\divrem_2.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\rshift.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\divrem_1.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\lshift.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\div_qr_1n_pi1.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\div_qr_2n_pi1.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\addmul_1.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\rsh1add_n.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\lshiftc.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\redc_1.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\andn_n.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\and_n.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\ior_n.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\bdiv_dbm1.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\iorn_n.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\sec_tabselect.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\sublsh2_n.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\xnor_n.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\xor_n.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\nand_n.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86_64\nior_n.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='Win32'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86\addmul_1.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+      <ObjectFile>$(IntDir)%(Filename).obj</ObjectFile>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86\add_n.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86\bdiv_dbm1.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86\bdiv_q_1.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86\cnd_add_n.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86\cnd_sub_n.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86\copyd.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86\copyi.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86\divexact_1.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86\divrem_1.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86\divrem_2.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86\gcd_11.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86\lshift.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86\mod_34lsub1.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86\mul_1.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86\rshift.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86\sec_tabselect.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86\sqr_basecase.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86\submul_1.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86\sub_n.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86\udiv_qrnnd.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </YASM>
+    <YASM Include="$(ProjectDir)\source\SMP\mpn\x86\umul_ppmm.s">
+      <ExcludedFromBuild Condition="'$(Platform)'=='x64'">true</ExcludedFromBuild>
+    </YASM>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\SMP\libgmp.def" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{02B94302-23D6-43EF-8865-95CDE99D5DC2}</ProjectGuid>
+    <RootNamespace>gmp</RootNamespace>
+  </PropertyGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="smp.props" />
+    <Import Project="libgmp_files.props" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\yasm.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>inline=__inline;__GMP_WITHIN_GMP;__GMP_WITHIN_GMPXX;HAVE_CONFIG_H;DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)source\SMP;$(ProjectDir)source\;$(ProjectDir)source\SMP\mpn;$(ProjectDir)source\SMP\x86;$(ProjectDir)source\SMP\x86\mpn;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4244;4146;4101;4018;4307;4267;4334;4554;4267;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/IGNORE:4042 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)\lib\$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir)\lib;$(ProjectDir)\..\..\prebuilt\lib\x86\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy $(ProjectDir)\source\SMP\gmp.h "$(OutDir)"\include\
+copy $(ProjectDir)\source\gmpxx.h "$(OutDir)"\include\
+mkdir $(OutDir)\licenses
+copy $(ProjectDir)\source\COPYING.LESSERv3 $(OutDir)\licenses\gmp.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist $(ProjectDir)\source\config.h (
+del $(ProjectDir)\source\config.h
+)
+if exist "$(OutDir)"\include\gmp.h (
+del "$(OutDir)"\include\gmp.h
+)
+if exist $(ProjectDir)\source\fac_table.h (
+del $(ProjectDir)\source\fac_table.h
+)
+if exist $(ProjectDir)\source\fib_table.h (
+del $(ProjectDir)\source\fib_table.h
+)
+if exist $(ProjectDir)\source\gmp.h (
+del $(ProjectDir)\source\gmp.h
+)
+if exist $(ProjectDir)\source\mp_bases.h (
+del $(ProjectDir)\source\mp_bases.h
+)
+if exist $(ProjectDir)\source\trialdivtab.h (
+del $(ProjectDir)\source\trialdivtab.h
+)
+if exist $(ProjectDir)\source\mpn\perfsqr.h (
+del $(ProjectDir)\source\mpn\perfsqr.h
+)
+if exist $(ProjectDir)\source\mpn\jacobitab.h (
+del $(ProjectDir)\source\mpn\jacobitab.h
+)
+if exist $(ProjectDir)\source\mpn\mp_bases.c (
+del $(ProjectDir)\source\mpn\mp_bases.c
+)
+if exist $(ProjectDir)\source\mpn\fib_table.c (
+del $(ProjectDir)\source\mpn\fib_table.c
+)
+if exist $(ProjectDir)\source\gmp-mparam.h (
+del $(ProjectDir)\source\gmp-mparam.h
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\gmp.h (
+del /f /q "$(OutDir)"\include\gmp.h
+)
+if exist $(OutDir)\licenses\gmp.txt (
+del /f /q $(OutDir)\licenses\gmp.txt
+)</Command>
+    </CustomBuildStep>
+    <YASM>
+      <Parser>1</Parser>
+      <Preprocessor>1</Preprocessor>
+    </YASM>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>inline=__inline;__GMP_WITHIN_GMP;__GMP_WITHIN_GMPXX;HAVE_CONFIG_H;DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)source\SMP;$(ProjectDir)source;$(ProjectDir)source\SMP\mpn;$(ProjectDir)source\SMP\x86_64;$(ProjectDir)source\SMP\x86_64\mpn;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4244;4146;4101;4018;4307;4267;4334;4554;4267;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy $(ProjectDir)\source\SMP\gmp.h "$(OutDir)"\include\
+copy $(ProjectDir)\source\gmpxx.h "$(OutDir)"\include\
+mkdir $(OutDir)\licenses
+copy $(ProjectDir)\source\COPYING.LESSERv3 $(OutDir)\licenses\gmp.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist $(ProjectDir)\source\config.h (
+del $(ProjectDir)\source\config.h
+)
+if exist "$(OutDir)"\include\gmp.h (
+del "$(OutDir)"\include\gmp.h
+)
+if exist $(ProjectDir)\source\fac_table.h (
+del $(ProjectDir)\source\fac_table.h
+)
+if exist $(ProjectDir)\source\fib_table.h (
+del $(ProjectDir)\source\fib_table.h
+)
+if exist $(ProjectDir)\source\gmp.h (
+del $(ProjectDir)\source\gmp.h
+)
+if exist $(ProjectDir)\source\mp_bases.h (
+del $(ProjectDir)\source\mp_bases.h
+)
+if exist $(ProjectDir)\source\trialdivtab.h (
+del $(ProjectDir)\source\trialdivtab.h
+)
+if exist $(ProjectDir)\source\mpn\perfsqr.h (
+del $(ProjectDir)\source\mpn\perfsqr.h
+)
+if exist $(ProjectDir)\source\mpn\jacobitab.h (
+del $(ProjectDir)\source\mpn\jacobitab.h
+)
+if exist $(ProjectDir)\source\mpn\mp_bases.c (
+del $(ProjectDir)\source\mpn\mp_bases.c
+)
+if exist $(ProjectDir)\source\mpn\fib_table.c (
+del $(ProjectDir)\source\mpn\fib_table.c
+)
+if exist $(ProjectDir)\source\gmp-mparam.h (
+del $(ProjectDir)\source\gmp-mparam.h
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\gmp.h (
+del /f /q "$(OutDir)"\include\gmp.h
+)
+if exist $(OutDir)\licenses\gmp.txt (
+del /f /q $(OutDir)\licenses\gmp.txt
+)</Command>
+    </CustomBuildStep>
+    <YASM>
+      <Parser>1</Parser>
+      <Preprocessor>1</Preprocessor>
+    </YASM>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\;$(ProjectDir)\..\..\prebuilt\lib\x64\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>inline=__inline;__GMP_WITHIN_GMP;__GMP_WITHIN_GMPXX;HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)source\SMP;$(ProjectDir)source\;$(ProjectDir)source\SMP\mpn;$(ProjectDir)source\SMP\x86;$(ProjectDir)source\SMP\x86\mpn;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4244;4146;4101;4018;4307;4267;4334;4554;4267;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/IGNORE:4042 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)\lib\$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir)\lib;$(ProjectDir)\..\..\prebuilt\lib\x86\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy $(ProjectDir)\source\SMP\gmp.h "$(OutDir)"\include\
+copy $(ProjectDir)\source\gmpxx.h "$(OutDir)"\include\
+mkdir $(OutDir)\licenses
+copy $(ProjectDir)\source\COPYING.LESSERv3 $(OutDir)\licenses\gmp.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist $(ProjectDir)\source\config.h (
+del $(ProjectDir)\source\config.h
+)
+if exist "$(OutDir)"\include\gmp.h (
+del "$(OutDir)"\include\gmp.h
+)
+if exist $(ProjectDir)\source\fac_table.h (
+del $(ProjectDir)\source\fac_table.h
+)
+if exist $(ProjectDir)\source\fib_table.h (
+del $(ProjectDir)\source\fib_table.h
+)
+if exist $(ProjectDir)\source\gmp.h (
+del $(ProjectDir)\source\gmp.h
+)
+if exist $(ProjectDir)\source\mp_bases.h (
+del $(ProjectDir)\source\mp_bases.h
+)
+if exist $(ProjectDir)\source\trialdivtab.h (
+del $(ProjectDir)\source\trialdivtab.h
+)
+if exist $(ProjectDir)\source\mpn\perfsqr.h (
+del $(ProjectDir)\source\mpn\perfsqr.h
+)
+if exist $(ProjectDir)\source\mpn\jacobitab.h (
+del $(ProjectDir)\source\mpn\jacobitab.h
+)
+if exist $(ProjectDir)\source\mpn\mp_bases.c (
+del $(ProjectDir)\source\mpn\mp_bases.c
+)
+if exist $(ProjectDir)\source\mpn\fib_table.c (
+del $(ProjectDir)\source\mpn\fib_table.c
+)
+if exist $(ProjectDir)\source\gmp-mparam.h (
+del $(ProjectDir)\source\gmp-mparam.h
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\gmp.h (
+del /f /q "$(OutDir)"\include\gmp.h
+)
+if exist $(OutDir)\licenses\gmp.txt (
+del /f /q $(OutDir)\licenses\gmp.txt
+)</Command>
+    </CustomBuildStep>
+    <YASM>
+      <Parser>1</Parser>
+      <Preprocessor>1</Preprocessor>
+    </YASM>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>inline=__inline;__GMP_WITHIN_GMP;__GMP_WITHIN_GMPXX;HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)source\SMP;$(ProjectDir)source;$(ProjectDir)source\SMP\mpn;$(ProjectDir)source\SMP\x86_64;$(ProjectDir)source\SMP\x86_64\mpn;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4244;4146;4101;4018;4307;4267;4334;4554;4267;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy $(ProjectDir)\source\SMP\gmp.h "$(OutDir)"\include\
+copy $(ProjectDir)\source\gmpxx.h "$(OutDir)"\include\
+mkdir $(OutDir)\licenses
+copy $(ProjectDir)\source\COPYING.LESSERv3 $(OutDir)\licenses\gmp.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist $(ProjectDir)\source\config.h (
+del $(ProjectDir)\source\config.h
+)
+if exist "$(OutDir)"\include\gmp.h (
+del "$(OutDir)"\include\gmp.h
+)
+if exist $(ProjectDir)\source\fac_table.h (
+del $(ProjectDir)\source\fac_table.h
+)
+if exist $(ProjectDir)\source\fib_table.h (
+del $(ProjectDir)\source\fib_table.h
+)
+if exist $(ProjectDir)\source\gmp.h (
+del $(ProjectDir)\source\gmp.h
+)
+if exist $(ProjectDir)\source\mp_bases.h (
+del $(ProjectDir)\source\mp_bases.h
+)
+if exist $(ProjectDir)\source\trialdivtab.h (
+del $(ProjectDir)\source\trialdivtab.h
+)
+if exist $(ProjectDir)\source\mpn\perfsqr.h (
+del $(ProjectDir)\source\mpn\perfsqr.h
+)
+if exist $(ProjectDir)\source\mpn\jacobitab.h (
+del $(ProjectDir)\source\mpn\jacobitab.h
+)
+if exist $(ProjectDir)\source\mpn\mp_bases.c (
+del $(ProjectDir)\source\mpn\mp_bases.c
+)
+if exist $(ProjectDir)\source\mpn\fib_table.c (
+del $(ProjectDir)\source\mpn\fib_table.c
+)
+if exist $(ProjectDir)\source\gmp-mparam.h (
+del $(ProjectDir)\source\gmp-mparam.h
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\gmp.h (
+del /f /q "$(OutDir)"\include\gmp.h
+)
+if exist $(OutDir)\licenses\gmp.txt (
+del /f /q $(OutDir)\licenses\gmp.txt
+)</Command>
+    </CustomBuildStep>
+    <YASM>
+      <Parser>1</Parser>
+      <Preprocessor>1</Preprocessor>
+    </YASM>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>$(OutDir)\;$(ProjectDir)\..\..\prebuilt\lib\x64\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\yasm.targets" />
+  </ImportGroup>
+</Project>

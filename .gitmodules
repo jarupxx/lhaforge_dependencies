@@ -1,0 +1,36 @@
+[submodule "libarchive"]
+	path = libarchive/source
+	url = https://github.com/libarchive/libarchive.git
+	branch = 3.4
+[submodule "lz4"]
+	path = lz4/source
+	url = https://github.com/lz4/lz4.git
+	branch = release
+[submodule "zlib-ng"]
+	path = zlib-ng/source
+	url = https://github.com/zlib-ng/zlib-ng.git
+	branch = stable
+[submodule "zstd"]
+	path = zstd/source
+	url = https://github.com/facebook/zstd.git
+	branch = release
+[submodule "bzip2/source"]
+	path = bzip2/source
+	url = git://sourceware.org/git/bzip2.git
+	branch = master
+[submodule "nettle/source"]
+	path = nettle/source
+	url = https://github.com/ShiftMediaProject/nettle.git
+	branch = master
+[submodule "gmp/source"]
+	path = nettle/gmp/source
+	url = https://github.com/ShiftMediaProject/gmp.git
+[submodule "libiconv/source"]
+	path = libiconv/source
+	url = https://github.com/ShiftMediaProject/libiconv.git
+[submodule "liblzma/source"]
+	path = liblzma/source
+	url = https://github.com/ShiftMediaProject/liblzma.git
+[submodule "libcharset"]
+	path = libcharset
+	url = git@github.com:Claybird/libcharset-msvc.git

@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{85763F39-23DF-4C04-B7DF-7FBE3E7CF336}</ProjectGuid>
+    <RootNamespace>lzma</RootNamespace>
+  </PropertyGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="smp.props" />
+    <Import Project="liblzma_files.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;TUKLIB_SYMBOL_PREFIX=lzma_;inline=_inline;restrict=__restrict;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)\source\SMP\;$(ProjectDir)\source\src\liblzma\api;$(ProjectDir)\source\src\liblzma\common;$(ProjectDir)\source\src\liblzma\check;$(ProjectDir)\source\src\liblzma\lz;$(ProjectDir)\source\src\liblzma\rangecoder;$(ProjectDir)\source\src\liblzma\lzma;$(ProjectDir)\source\src\liblzma\delta;$(ProjectDir)\source\src\liblzma\simple;$(ProjectDir)\source\src\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4244;4267;4028;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy source\src\liblzma\api\lzma.h "$(OutDir)"\include
+mkdir "$(OutDir)"\include\lzma
+copy source\src\liblzma\api\lzma\*.h "$(OutDir)"\include\lzma
+mkdir $(OutDir)\licenses
+copy source\COPYING.LGPLv2.1 $(OutDir)\licenses\liblzma.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist source\config.h (
+del source\config.h
+)
+if exist "$(OutDir)"\include\lzma (
+rd /s /q "$(OutDir)"\include\lzma
+cd $(ProjectDir)
+)
+if exist "$(OutDir)"\include\lzma.h (
+del "$(OutDir)"\include\lzma.h
+)</Command>
+    </PreBuildEvent>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)\source\src\common;$(ProjectDir)\source\src\liblzma\api\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\lzma.h (
+del /f /q "$(OutDir)"\include\lzma.h
+)
+if exist "$(OutDir)"\include\lzma (
+rmdir /s /q "$(OutDir)"\include\lzma
+)
+if exist $(OutDir)\licenses\liblzma.txt (
+del /f /q $(OutDir)\licenses\liblzma.txt
+)</Command>
+    </CustomBuildStep>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\;$(ProjectDir)\..\..\prebuilt\lib\x86\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;TUKLIB_SYMBOL_PREFIX=lzma_;inline=_inline;restrict=__restrict;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)\source\SMP\;$(ProjectDir)\source\src\liblzma\api;$(ProjectDir)\source\src\liblzma\common;$(ProjectDir)\source\src\liblzma\check;$(ProjectDir)\source\src\liblzma\lz;$(ProjectDir)\source\src\liblzma\rangecoder;$(ProjectDir)\source\src\liblzma\lzma;$(ProjectDir)\source\src\liblzma\delta;$(ProjectDir)\source\src\liblzma\simple;$(ProjectDir)\source\src\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4244;4267;4028;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy source\src\liblzma\api\lzma.h "$(OutDir)"\include
+mkdir "$(OutDir)"\include\lzma
+copy source\src\liblzma\api\lzma\*.h "$(OutDir)"\include\lzma
+mkdir $(OutDir)\licenses
+copy source\COPYING.LGPLv2.1 $(OutDir)\licenses\liblzma.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist source\config.h (
+del source\config.h
+)
+if exist "$(OutDir)"\include\lzma (
+rd /s /q "$(OutDir)"\include\lzma
+cd $(ProjectDir)
+)
+if exist "$(OutDir)"\include\lzma.h (
+del "$(OutDir)"\include\lzma.h
+)</Command>
+    </PreBuildEvent>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)\source\src\common;$(ProjectDir)\source\src\liblzma\api\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\lzma.h (
+del /f /q "$(OutDir)"\include\lzma.h
+)
+if exist "$(OutDir)"\include\lzma (
+rmdir /s /q "$(OutDir)"\include\lzma
+)
+if exist $(OutDir)\licenses\liblzma.txt (
+del /f /q $(OutDir)\licenses\liblzma.txt
+)</Command>
+    </CustomBuildStep>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\;$(ProjectDir)\..\..\prebuilt\lib\x64\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;TUKLIB_SYMBOL_PREFIX=lzma_;inline=_inline;restrict=__restrict;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)\source\SMP\;$(ProjectDir)\source\src\liblzma\api;$(ProjectDir)\source\src\liblzma\common;$(ProjectDir)\source\src\liblzma\check;$(ProjectDir)\source\src\liblzma\lz;$(ProjectDir)\source\src\liblzma\rangecoder;$(ProjectDir)\source\src\liblzma\lzma;$(ProjectDir)\source\src\liblzma\delta;$(ProjectDir)\source\src\liblzma\simple;$(ProjectDir)\source\src\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4244;4267;4028;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy source\src\liblzma\api\lzma.h "$(OutDir)"\include
+mkdir "$(OutDir)"\include\lzma
+copy source\src\liblzma\api\lzma\*.h "$(OutDir)"\include\lzma
+mkdir $(OutDir)\licenses
+copy source\COPYING.LGPLv2.1 $(OutDir)\licenses\liblzma.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist source\config.h (
+del source\config.h
+)
+if exist "$(OutDir)"\include\lzma (
+rd /s /q "$(OutDir)"\include\lzma
+cd $(ProjectDir)
+)
+if exist "$(OutDir)"\include\lzma.h (
+del "$(OutDir)"\include\lzma.h
+)</Command>
+    </PreBuildEvent>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)\source\src\common;$(ProjectDir)\source\src\liblzma\api\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\lzma.h (
+del /f /q "$(OutDir)"\include\lzma.h
+)
+if exist "$(OutDir)"\include\lzma (
+rmdir /s /q "$(OutDir)"\include\lzma
+)
+if exist $(OutDir)\licenses\liblzma.txt (
+del /f /q $(OutDir)\licenses\liblzma.txt
+)</Command>
+    </CustomBuildStep>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\;$(ProjectDir)\..\..\prebuilt\lib\x86\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;TUKLIB_SYMBOL_PREFIX=lzma_;inline=_inline;restrict=__restrict;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)\source\SMP\;$(ProjectDir)\source\src\liblzma\api;$(ProjectDir)\source\src\liblzma\common;$(ProjectDir)\source\src\liblzma\check;$(ProjectDir)\source\src\liblzma\lz;$(ProjectDir)\source\src\liblzma\rangecoder;$(ProjectDir)\source\src\liblzma\lzma;$(ProjectDir)\source\src\liblzma\delta;$(ProjectDir)\source\src\liblzma\simple;$(ProjectDir)\source\src\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4244;4267;4028;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+copy source\src\liblzma\api\lzma.h "$(OutDir)"\include
+mkdir "$(OutDir)"\include\lzma
+copy source\src\liblzma\api\lzma\*.h "$(OutDir)"\include\lzma
+mkdir $(OutDir)\licenses
+copy source\COPYING.LGPLv2.1 $(OutDir)\licenses\liblzma.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist source\config.h (
+del source\config.h
+)
+if exist "$(OutDir)"\include\lzma (
+rd /s /q "$(OutDir)"\include\lzma
+cd $(ProjectDir)
+)
+if exist "$(OutDir)"\include\lzma.h (
+del "$(OutDir)"\include\lzma.h
+)</Command>
+    </PreBuildEvent>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)\source\src\common;$(ProjectDir)\source\src\liblzma\api\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\lzma.h (
+del /f /q "$(OutDir)"\include\lzma.h
+)
+if exist "$(OutDir)"\include\lzma (
+rmdir /s /q "$(OutDir)"\include\lzma
+)
+if exist $(OutDir)\licenses\liblzma.txt (
+del /f /q $(OutDir)\licenses\liblzma.txt
+)</Command>
+    </CustomBuildStep>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>$(OutDir)\lib\;$(ProjectDir)\..\..\prebuilt\lib\x64\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+</Project>
