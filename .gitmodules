@@ -34,3 +34,7 @@
 [submodule "libcharset"]
 	path = libcharset
 	url = git@github.com:Claybird/libcharset-msvc.git
+[submodule "win-iconv/source"]
+	path = win-iconv/source
+	url = https://github.com/win-iconv/win-iconv.git
+	branch = master
