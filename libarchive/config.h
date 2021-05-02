@@ -639,7 +639,7 @@ typedef uint64_t uintmax_t;
 /* #undef HAVE_GRP_H */
 
 /* Define to 1 if you have the `iconv' function. */
-/* #undef HAVE_ICONV */
+#define HAVE_ICONV 1
 
 /* Define to 1 if you have the <iconv.h> header file. */
 #define HAVE_ICONV_H 1
