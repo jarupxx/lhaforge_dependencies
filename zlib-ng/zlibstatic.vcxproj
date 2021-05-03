@@ -149,7 +149,7 @@
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ZLIB_COMPAT;WITH_GZFILEOP;UNALIGNED_OK;UNALIGNED64_OK;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;X86_FEATURES;X86_AVX2;X86_AVX2_ADLER32;X86_AVX_CHUNKSET;X86_SSE42_CRC_HASH;X86_SSE42_CRC_INTRIN;X86_SSE42_CMP_STR;X86_SSE2;X86_SSE2_CHUNKSET;X86_SSE2_SLIDEHASH;X86_SSSE3;X86_SSSE3_ADLER32;X86_PCLMULQDQ_CRC;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -178,7 +178,7 @@
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ZLIB_COMPAT;WITH_GZFILEOP;UNALIGNED_OK;UNALIGNED64_OK;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;X86_FEATURES;X86_AVX2;X86_AVX2_ADLER32;X86_AVX_CHUNKSET;X86_SSE42_CRC_HASH;X86_SSE42_CRC_INTRIN;X86_SSE42_CMP_STR;X86_SSE2;X86_SSE2_CHUNKSET;X86_SSE2_SLIDEHASH;X86_SSSE3;X86_SSSE3_ADLER32;X86_PCLMULQDQ_CRC;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>

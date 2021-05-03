@@ -55,7 +55,7 @@
     <ClInclude Include="source\src\liblzma\simple\simple_decoder.h" />
     <ClInclude Include="source\src\liblzma\simple\simple_encoder.h" />
     <ClInclude Include="source\src\liblzma\simple\simple_private.h" />
-    <ClInclude Include="config.h" />
+    <ClInclude Include="source\SMP\config.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\src\common\tuklib_cpucores.c" />

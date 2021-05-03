@@ -687,7 +687,7 @@ typedef uint64_t uintmax_t;
 /* #undef HAVE_BLAKE2_H */
 
 /* Define to 1 if you have the `charset' library (-lcharset). */
-/* #undef HAVE_LIBCHARSET */
+#define HAVE_LIBCHARSET 1
 
 /* Define to 1 if you have the `crypto' library (-lcrypto). */
 /* #undef HAVE_LIBCRYPTO */
@@ -811,7 +811,7 @@ typedef uint64_t uintmax_t;
 #define HAVE_LZMA_H 1
 
 /* Define to 1 if you have a working `lzma_stream_encoder_mt' function. */
-/* #undef HAVE_LZMA_STREAM_ENCODER_MT */
+#define HAVE_LZMA_STREAM_ENCODER_MT 1
 
 /* Define to 1 if you have the <lzo/lzo1x.h> header file. */
 /* #undef HAVE_LZO_LZO1X_H */
