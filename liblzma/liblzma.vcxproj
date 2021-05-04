@@ -13,6 +13,7 @@
       <PreprocessorDefinitions>WIN32;_WIN32;HAVE_CONFIG_H;TUKLIB_SYMBOL_PREFIX=lzma_;inline=_inline;restrict=__restrict;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(ProjectDir)\source\SMP\;$(ProjectDir)\source\src\liblzma\api;$(ProjectDir)\source\src\liblzma\common;$(ProjectDir)\source\src\liblzma\check;$(ProjectDir)\source\src\liblzma\lz;$(ProjectDir)\source\src\liblzma\rangecoder;$(ProjectDir)\source\src\liblzma\lzma;$(ProjectDir)\source\src\liblzma\delta;$(ProjectDir)\source\src\liblzma\simple;$(ProjectDir)\source\src\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4244;4267;4028;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <PostBuildEvent>
       <Command>mkdir "$(OutDir)"\include
