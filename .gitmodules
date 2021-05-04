@@ -18,16 +18,6 @@
 	path = bzip2/source
 	url = git://sourceware.org/git/bzip2.git
 	branch = master
-[submodule "nettle/source"]
-	path = nettle/source
-	url = https://github.com/ShiftMediaProject/nettle.git
-	branch = master
-[submodule "gmp/source"]
-	path = nettle/gmp/source
-	url = https://github.com/ShiftMediaProject/gmp.git
-[submodule "libiconv/source"]
-	path = libiconv/source
-	url = https://github.com/ShiftMediaProject/libiconv.git
 [submodule "libcharset"]
 	path = libcharset
 	url = git@github.com:Claybird/libcharset-msvc.git
