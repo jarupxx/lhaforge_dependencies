@@ -28,9 +28,6 @@
 [submodule "libiconv/source"]
 	path = libiconv/source
 	url = https://github.com/ShiftMediaProject/libiconv.git
-[submodule "liblzma/source"]
-	path = liblzma/source
-	url = https://github.com/ShiftMediaProject/liblzma.git
 [submodule "libcharset"]
 	path = libcharset
 	url = git@github.com:Claybird/libcharset-msvc.git
@@ -38,3 +35,7 @@
 	path = win-iconv/source
 	url = https://github.com/win-iconv/win-iconv.git
 	branch = master
+[submodule "xzutils/source"]
+	path = xzutils/source
+	url = https://git.tukaani.org/xz.git
+	branch = v5.2
