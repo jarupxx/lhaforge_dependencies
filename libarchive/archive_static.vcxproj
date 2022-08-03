@@ -216,6 +216,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="$(ProjectDir)\source\libarchive\archive_acl.c" />
+    <ClCompile Include="source\libarchive\archive_write_set_format_cpio_binary.c" />
+    <ClCompile Include="source\libarchive\archive_write_set_format_cpio_odc.c" />
     <ClInclude Include="$(ProjectDir)\source\libarchive\archive_acl_private.h" />
     <ClCompile Include="$(ProjectDir)\source\libarchive\archive_check_magic.c" />
     <ClCompile Include="$(ProjectDir)\source\libarchive\archive_cmdline.c" />
