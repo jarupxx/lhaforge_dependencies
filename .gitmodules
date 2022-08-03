@@ -1,0 +1,36 @@
+[submodule "libarchive/source"]
+	path = libarchive/source
+	url = https://github.com/libarchive/libarchive.git
+	branch = 3.5
+[submodule "lz4/source"]
+	path = lz4/source
+	url = https://github.com/lz4/lz4.git
+	branch = release
+[submodule "zlib-ng/source"]
+	path = zlib-ng/source
+	url = https://github.com/zlib-ng/zlib-ng.git
+	branch = stable
+[submodule "zstd/source"]
+	path = zstd/source
+	url = https://github.com/facebook/zstd.git
+	branch = release
+[submodule "bzip2/source"]
+	path = bzip2/source
+	url = git://sourceware.org/git/bzip2.git
+	branch = master
+[submodule "libcharset"]
+	path = libcharset
+	url = git@github.com:Claybird/libcharset-msvc.git
+	branch = main
+[submodule "win-iconv/source"]
+	path = win-iconv/source
+	url = https://github.com/win-iconv/win-iconv.git
+	branch = master
+[submodule "xzutils/source"]
+	path = xzutils/source
+	url = https://git.tukaani.org/xz.git
+	branch = v5.2
+[submodule "minizip-ng/source"]
+	path = minizip-ng/source
+	url = https://github.com/zlib-ng/minizip-ng.git
+	branch = master
