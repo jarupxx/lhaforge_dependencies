@@ -88,7 +88,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)\libarchive\source</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\libarchive\source;$(SolutionDir)\minizip-ng;$(SolutionDir)\minizip-ng\source</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -104,7 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)\libarchive\source</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\libarchive\source;$(SolutionDir)\minizip-ng;$(SolutionDir)\minizip-ng\source</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -120,7 +120,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)\libarchive\source</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\libarchive\source;$(SolutionDir)\minizip-ng;$(SolutionDir)\minizip-ng\source</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -137,7 +137,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <AdditionalIncludeDirectories>$(SolutionDir)\libarchive\source</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\libarchive\source;$(SolutionDir)\minizip-ng;$(SolutionDir)\minizip-ng\source</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -152,6 +152,9 @@
   <ItemGroup>
     <ProjectReference Include="..\libarchive\archive_static.vcxproj">
       <Project>{131b9eef-9725-30a9-842f-7c244500c1ec}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\minizip-ng\minizip.vcxproj">
+      <Project>{0a9f72f0-8880-3523-9b09-d8c39a76ed8c}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
