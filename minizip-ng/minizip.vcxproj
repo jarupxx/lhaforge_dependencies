@@ -80,7 +80,7 @@
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;_WINDOWS;HAVE_STDINT_H;HAVE_INTTYPES_H;NO_FSEEKO;HAVE_ZLIB;HAVE_BZIP2;HAVE_LZMA;LZMA_API_STATIC;HAVE_ZSTD;_CRT_SECURE_NO_DEPRECATE;MZ_ZIP_SIGNING;HAVE_PKCRYPT;HAVE_WZAES;ZLIB_COMPAT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -116,7 +116,7 @@
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;_WINDOWS;HAVE_STDINT_H;HAVE_INTTYPES_H;NO_FSEEKO;HAVE_ZLIB;HAVE_BZIP2;HAVE_LZMA;LZMA_API_STATIC;HAVE_ZSTD;_CRT_SECURE_NO_DEPRECATE;MZ_ZIP_SIGNING;HAVE_PKCRYPT;HAVE_WZAES;ZLIB_COMPAT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
