@@ -29,3 +29,7 @@
 	path = xzutils/source
 	url = https://git.tukaani.org/xz.git
 	branch = v5.2
+[submodule "minizip-ng/source"]
+	path = minizip-ng/source
+	url = https://github.com/zlib-ng/minizip-ng.git
+	branch = master
