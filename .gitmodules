@@ -34,3 +34,6 @@
 	path = minizip-ng/source
 	url = https://github.com/zlib-ng/minizip-ng.git
 	branch = master
+[submodule "unrar/unrar"]
+	path = unrar/unrar
+	url = git@github.com:Claybird/unrar.git
