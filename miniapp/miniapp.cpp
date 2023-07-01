@@ -3,6 +3,8 @@
 #include <libarchive/archive.h>
 #include <libarchive/archive_entry.h>
 #include <zip.h>
+#include <unrar/rar.hpp>
+#include <unrar/dll.hpp>
 
 int main()
 {
