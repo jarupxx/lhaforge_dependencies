@@ -101,7 +101,7 @@
     <Lib>
       <AdditionalOptions>
       </AdditionalOptions>
-      <AdditionalDependencies>Crypt32.lib</AdditionalDependencies>
+      <AdditionalDependencies>Bcrypt.lib</AdditionalDependencies>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -137,7 +137,7 @@
     <Lib>
       <AdditionalOptions>
       </AdditionalOptions>
-      <AdditionalDependencies>Crypt32.lib</AdditionalDependencies>
+      <AdditionalDependencies>Bcrypt.lib</AdditionalDependencies>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -174,7 +174,7 @@
     <Lib>
       <AdditionalOptions>
       </AdditionalOptions>
-      <AdditionalDependencies>Crypt32.lib</AdditionalDependencies>
+      <AdditionalDependencies>Bcrypt.lib</AdditionalDependencies>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -211,7 +211,7 @@
     <Lib>
       <AdditionalOptions>
       </AdditionalOptions>
-      <AdditionalDependencies>Crypt32.lib</AdditionalDependencies>
+      <AdditionalDependencies>Bcrypt.lib</AdditionalDependencies>
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -229,7 +229,8 @@
     <ClCompile Include="source\mz_strm_zstd.c" />
     <ClCompile Include="source\mz_os_win32.c" />
     <ClCompile Include="source\mz_strm_os_win32.c" />
-    <ClCompile Include="source\mz_crypt_win32.c" />
+    <ClCompile Include="source\mz_crypt_winvista.c" />
+    <ClCompile Include="source\mz_crypt_winxp.c" />
     <ClCompile Include="source\mz_strm_pkcrypt.c" />
     <ClCompile Include="source\mz_strm_wzaes.c" />
     <ClCompile Include="source\mz_compat.c" />
