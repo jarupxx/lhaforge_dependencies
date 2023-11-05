@@ -16,11 +16,11 @@
 	branch = release
 [submodule "bzip2/source"]
 	path = bzip2/source
-	url = git://sourceware.org/git/bzip2.git
+	url = https://gitlab.com/bzip2/bzip2.git
 	branch = master
 [submodule "libcharset"]
 	path = libcharset
-	url = git@github.com:Claybird/libcharset-msvc.git
+	url = https://github.com/Claybird/libcharset-msvc.git
 	branch = main
 [submodule "win-iconv/source"]
 	path = win-iconv/source
@@ -36,4 +36,4 @@
 	branch = master
 [submodule "unrar/unrar"]
 	path = unrar/unrar
-	url = git@github.com:Claybird/unrar.git
+	url = https://github.com/Claybird/unrar.git
