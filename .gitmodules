@@ -16,7 +16,7 @@
 	branch = release
 [submodule "bzip2/source"]
 	path = bzip2/source
-	url = git://sourceware.org/git/bzip2.git
+	url = https://gitlab.com/bzip2/bzip2.git
 	branch = master
 [submodule "libcharset"]
 	path = libcharset
